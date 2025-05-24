@@ -6,7 +6,7 @@ int mcm(int a[],int i,int j){
     if(i == j)
         return 0;
         for(k = i; k < j; k++) {
-            count=mcm(a,i,k)+mcm(a,k+1,j)+a[i-1]+a[k]+a[j];
+            count=mcm(a,i,k)+mcm(a,k+1,j)+a[i-1]*a[k]*a[j];
             if(count<min) min=count;
         }
         return min;
