@@ -10,9 +10,9 @@ void kruskal(){
         b=v=j;
         }
         while(parent[u])
-        parent[u]=u;
+        u=parent[u];
         while(parent[v])
-        parent[v]=v;
+        v=parent[v];
         if(u!=v){
             printf("%d\tedge\t(%d,%d) = %d\n", ne, a, b, min);
             ne++;
